@@ -1,0 +1,38 @@
+# Dependency directories
+/node_modules/
+
+# Logs
+/yarn-error.log
+
+# dotenv environment variables file
+/.env
+
+# Coverage
+/.nyc_output
+
+# Public assets
+/public
+
+# Log
+/log.txt
+
+# JsDoc
+/out
+
+# Webpack stats
+/stats.json
+
+# Optional npm cache directory
+.npm
+
+# Docker container
+dev/data
+
+# Optiondal vscode cache directory
+.vscode/
+
+# Sequelize config.json
+config/config.json
+
+# Test dir
+.test

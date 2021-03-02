@@ -1,0 +1,14 @@
+version: '2'
+services:
+  db:
+    image: rabbitmq:3-management
+    restart: always
+    volumes:
+      - ./data:/var/lib/rabbitmq
+    environment:
+      RABBITMQ_ERLANG_COOKIE: 'secret cookie here'
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+    ports:
+      - 127.0.0.1:5672:5672
+      - 127.0.0.1:15672:15672
